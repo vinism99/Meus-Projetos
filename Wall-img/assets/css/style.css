@@ -161,3 +161,45 @@
     justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
     border-radius: 10px; /* Adiciona um arredondamento de 10px aos cantos */
     }
+
+    .intro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: transparent; /* Define o fundo como transparente para que a imagem de fundo seja visível */
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .fundo-pag {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+      width: 100%; /* Estica a imagem de uma borda à outra */
+      height: 100%;
+      z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+      opacity: 0.3; /* Define a opacidade da imagem (0.6 é um valor de exemplo, ajuste conforme necessário) */
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    .categorias {
+      height: 100vh;
+      position: relative;
+      background-color: #12121c; /* Cor de fundo da seção de categorias */
+      z-index: 1; /* Para que a seção de categorias cubra a página ao rolar */
+      overflow: hidden; /* Oculta conteúdo que ultrapassa a altura da seção */
+    
+      /* Alinhe o conteúdo verticalmente */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .categorias-placeholder {
+      height: 100%; /* Mesma altura da seção de categorias para ocupar espaço */
+    }
